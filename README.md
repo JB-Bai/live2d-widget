@@ -127,3 +127,7 @@ https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascri
 https://www.fghrsh.net/post/170.html
 
 2020年1月1日起，本项目不再依赖于 jQuery。
+
+## Reference
+https://github.com/fghrsh/live2d_demo
+
