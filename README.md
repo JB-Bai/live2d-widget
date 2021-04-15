@@ -1,12 +1,5 @@
 # Live2D Widget
 
-![](https://forthebadge.com/images/badges/built-with-love.svg)
-![](https://forthebadge.com/images/badges/uses-html.svg)
-![](https://forthebadge.com/images/badges/made-with-javascript.svg)
-![](https://forthebadge.com/images/badges/contains-cat-gifs.svg)
-![](https://forthebadge.com/images/badges/powered-by-electricity.svg)
-![](https://forthebadge.com/images/badges/makes-people-smile.svg)
-
 ## 特性 Feature
 
 在网页中添加 Live2D 看板娘。兼容 PJAX，支持无刷新加载。  
@@ -17,7 +10,7 @@ Add Live2D widget to web page. Compatible with PJAX.
 
 ## 示例 Demo
 
-在[米米的博客](https://zhangshuqiao.org)的左下角可查看效果。
+在[Demo](https://noyii.github.io/garden.html)的左下角可查看效果。
 
 你也可以在允许的范围内进行二次开发，这里有一些示例
 
@@ -59,19 +52,7 @@ Font Awesome (v4 or v5) is required for this plugin. Take Font Awesome v4 as an 
 
 ### Self-host
 
-你也可以直接把这些文件放到服务器上，而不是通过 CDN 加载。
-
-- 如果你能够通过 `ssh` 访问你的主机，请把整个仓库克隆到服务器上。执行：
-  ```bash
-  cd /path/to/your/webroot
-  # Clone this repository
-  git clone https://github.com/stevenjoezhang/live2d-widget.git
-  ```
-- 如果你的主机无法用 `ssh` 连接（例如一般的虚拟主机），请选择 `Download ZIP`，然后通过 `ftp` 等方式上传到主机上，再解压到网站的目录下。
-- 如果你是通过 Hexo 等工具部署的静态博客，请在博客源文件（即 `source`）目录下，执行前述的 `git clone` 命令。重新部署博客时，相关文件就会自动上传到对应的路径下。为了避免这些文件被 Hexo 插件错误地修改，可能需要设置 `skip_render`。
-
-这样，整个项目就可以通过你的服务器 IP 或者域名从公网访问了。不妨试试能否正常地通过浏览器打开 `autoload.js` 和 `live2d.min.js` 等文件，并确认这些文件的内容是完整和正确的。  
-一切正常的话，接下来修改一些配置就行了。（需要通过服务器上的文本编辑器修改；你也可以先在本地完成这一步骤，再上传到服务器上）  
+你也可以直接把这些文件放到服务器上，而不是通过 CDN 加载。 
 修改 `autoload.js` 中的常量 `live2d_path` 为 `live2d-widget` 这一目录的 URL。比如说，如果你能够通过
 ```
 https://example.com/path/to/live2d-widget/live2d.min.js
@@ -97,25 +78,7 @@ https://example.com/path/to/live2d-widget/
 - `waifu-tips.json` 中定义了触发条件（`selector`，CSS 选择器）和触发时显示的文字（`text`）；
 - `waifu.css` 是看板娘的样式表。
 
-源文件是对 Hexo 的 [NexT 主题](http://github.com/next-theme/hexo-theme-next)有效的，为了适用于你自己的网页，可能需要自行修改，或增加新内容。  
-**警告：作者不对包括但不限于 `waifu-tips.js` 和 `waifu-tips.json` 文件中的内容负责，请自行确保它们是合适的。**
-
 如果有任何疑问，欢迎提 Issue。如果有任何修改建议，欢迎提 Pull Request。
-
-## 鸣谢 Thanks
-
-<a href="https://www.browserstack.com/"><img height="80" src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo"></a>
-
-> 感谢 BrowserStack 容许我们在真实的浏览器中测试此项目。  
-> Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
-
-<a href="https://www.jsdelivr.com"><img height="80" src="https://raw.githubusercontent.com/jsdelivr/jsdelivr-media/master/default/svg/jsdelivr-logo-horizontal.svg"></a>
-
-> 感谢 jsDelivr 提供的 CDN 服务。  
-> Thanks jsDelivr for providing public CDN service.
-
-代码自这篇博文魔改而来：  
-https://www.fghrsh.net/post/123.html
 
 点击看板娘的纸飞机按钮时，会出现一个彩蛋，这来自于 [WebsiteAsteroids](http://www.websiteasteroids.com)。
 
@@ -144,8 +107,6 @@ https://github.com/guansss/nep-live2d
 
 Released under the GNU General Public License v3  
 http://www.gnu.org/licenses/gpl-3.0.html
-
-本仓库并不包含任何模型，用作展示的所有 Live2D 模型、图片、动作数据等版权均属于其原作者，仅供研究学习，不得用于商业用途。
 
 Live2D 官方网站：  
 https://www.live2d.com/en/  
